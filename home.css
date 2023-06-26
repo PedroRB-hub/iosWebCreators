@@ -1,0 +1,228 @@
+@import url(global/global.css);
+
+.section1 {
+    background-image: url(https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    padding: 0px;
+    display: grid;
+    align-items: center;
+}
+
+
+.section1 h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    text-shadow: 2px 1px 1px black;
+}
+
+.section1 h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    text-shadow: 2px 1px 1px black;
+}
+
+.section2 {
+    background-color: var(--corMain9);
+}
+
+.section2 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 1px 1px black;
+}
+
+
+.section3 h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+}
+
+.section3 a {
+    text-decoration: none;
+}
+
+.section3 h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.section3 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.section3 img {
+    max-width: 100%;
+}
+
+.container {
+    width: 800px;
+    margin: 10px auto;
+}
+
+.orcamento {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 58px;
+    align-items: center;
+    text-align: center;
+    border: 2px 1px 2px black;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--corAzul4);
+    color: white;
+    text-decoration: none;
+}
+
+.section4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.section4 p {
+    text-align: center;
+}
+
+.planos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tb {
+    text-align: center;
+}
+
+.col {
+    margin: 10px;
+}
+
+
+.plan2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.plan2 li {
+    background-color: var(--corMain1);
+    margin: 8px;
+    margin-left: 20px;
+}
+
+.planos {
+    min-width: 390px;
+    background: linear-gradient(to left, #542399 0, #2213ff 100%);
+    color: var(--corMain1);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.planos h4 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.planos li {
+    color: var(--corMain91);
+    padding: 5px;
+}
+
+.section5 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+
+}
+
+.comentario {
+    align-content: center;
+    box-shadow: 0 10px 25px #00000060;
+    border-radius: 4px;
+    padding: 1em;
+    background-color: #242424;
+    min-width: 400px;
+    margin: 1%;
+
+}
+
+.comentario p {
+    margin: 5px 0;
+    padding: 0 35px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .section1 {
+        background-size: cover;
+    }
+
+    .section1 h4 {
+        line-height: 3ex;
+    }
+
+    .section3 .container {
+        max-width: 100%;
+    }
+
+    .section4 {
+        max-width: 100%;
+    }
+
+    .section5 {
+        max-width: 100%;
+    }
+
+    .plan2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section5 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
