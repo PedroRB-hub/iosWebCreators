@@ -1,0 +1,54 @@
+@import url("../global/global.css");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    border: 2px solid #2514F9;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.card p {
+    text-align: justify;
+    margin-top: 10px;
+}
+.section1 .botao {
+    padding: 15px;
+    border: none;
+    color: #fff;
+    background-color: #2514F9;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.section2 {
+    background: linear-gradient(to left, #542399 0, #2213ff 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .section2 {
+    background: linear-gradient(to right, #340359 0, #010179 100%);
+}
+@media screen and (max-width: 900px) {
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

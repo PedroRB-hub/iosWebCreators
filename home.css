@@ -92,6 +92,9 @@
 .container {
     width: 800px;
     margin: 10px auto;
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 
 .orcamento {
@@ -99,15 +102,21 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 58px;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
     text-align: center;
     border: 2px 1px 2px black;
     width: 200px;
-    padding: 20px;
+    margin: 20px 0px;
+    padding: 7px;
     border-radius: 15px;
     background-color: var(--corAzul4);
     color: white;
     text-decoration: none;
+    transition: .3s;
+}
+.orcamento:hover{
+    letter-spacing: 2px
 }
 
 .section4 {
@@ -115,6 +124,12 @@
     background-color: black;
     color: white;
     font-family: 'Righteous', cursive;
+}
+.sites a {
+    transition: .3s;
+}
+.sites a:hover{
+    letter-spacing: 1px
 }
 
 .section4 p {
@@ -191,6 +206,17 @@
     padding: 0 35px;
     color: #f4f4f4;
     text-align: center;
+}
+
+.pro h4 a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.pro h4 a:hover {
+    letter-spacing: 1px;
+    /* transition: .3s; */
 }
 
 @media screen and (max-width: 768px) {

@@ -35,7 +35,7 @@ img {
 body {
   background-color: var(--corMain1);
   color: var(--corMain91);
-  font-family: 'Righteous', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -190,6 +190,11 @@ header {
 
 .dark-mode header .menu.ativado {
   background: #250055;
+}
+
+.dark-mode .planos {
+  background: linear-gradient(to top, #340359 0, #010179 100%);
+  color: #fff;
 }
 
   @media screen and (max-width: 768px) {

@@ -27,7 +27,7 @@
 
 .planos {
   min-width: 390px;
-  background: linear-gradient(100deg, var(--corAzul3), var(--corAzul5));
+  background: linear-gradient(to left, #542399 0, #2213ff 100%);
   color: var(--corMain1);
   margin: 10px;
   padding: 10px;
@@ -47,10 +47,14 @@
   padding: 5px;
 }
 
+.pros {
+  text-decoration: none;
+}
+
 .section3 {
   margin: 10px;
   padding: 10px;
-  background-color: var(--corAzul4);
+  background: linear-gradient(to left, #542399 0, #2213ff 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -91,12 +95,50 @@
   padding: 10px;
   justify-self: center;
 }
+.section4 {
+  background: linear-gradient(to left, #542399 0, #2213ff 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.section4 a {
+  background-color: #100d2b;
+  padding: 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+.section p{
+  margin: 20px;
+}
+
+.dark-mode .section3{
+  background: linear-gradient(to right, #340359 0, #010179 100%);
+}
+
+.dark-mode .planos {
+  background: linear-gradient(to right, #340359 0, #010179 100%);
+  color: #fff;
+}
+.dark-mode .section4 {
+  background: linear-gradient(to right, #340359 0, #010179 100%);
+}
 
 @media screen and (max-width: 768px) {
 
   .section2 {
     display: flex;
     flex-direction: column;
+  }
+  .section4 a{
+    text-decoration: none;
   }
 
   .section3 {
@@ -107,5 +149,10 @@
     .section3 input {
       height: 20px;
       min-width: 100px;
+    }
+    .section4 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 60px;
+
     }
 }
